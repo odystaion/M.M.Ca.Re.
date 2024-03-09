@@ -1,0 +1,5 @@
+econ    -default
+econ1	-pixie	-smplx
+econ2	-pixie	-ifnets
+econ1	-pymafx	-smplx
+econ1	-pymafx	-ifnets
