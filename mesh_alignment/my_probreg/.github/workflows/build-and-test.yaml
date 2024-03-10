@@ -1,0 +1,79 @@
+name: Build and test
+
+on:
+  push:
+    branches: [master]
+    tags: ["v*"]
+  pull_request:
+    branches: [master]
+
+env:
+  WINDOWS_OS_NAME: windows-2022
+  LINUX_OS_NAME: ubuntu-20.04
+  POETRY_CACHE_DIR: ~/.cache/pypoetry
+  CONFIG_POETRY_PATH: ${USERPROFILE}\.local\venv\Scripts
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.8", "3.9", "3.10"]
+        os: [ubuntu-20.04, windows-2022]
+        openmp-on: [true, false]
+        exclude:
+          - os: windows-2022
+            openmp-on: true
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install Poetry
+        uses: snok/install-poetry@v1.3.3
+        with:
+          version: 1.4.0
+          virtualenvs-in-project: true
+
+      - name: Add Poetry to the PATH environment variable
+        shell: bash
+        run: |
+          echo "${{ env.CONFIG_POETRY_PATH }}" >> $GITHUB_PATH
+
+      - name: Set cache dir
+        run: poetry config cache-dir ${{ env.POETRY_CACHE_DIR }}
+
+      - name: Install OpenMP
+        if: ${{ matrix.os == env.LINUX_OS_NAME && matrix.openmp-on }}
+        run: |
+          sudo apt update
+          sudo apt install -y libomp-dev
+
+      - name: Cache venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            ${{ env.POETRY_CACHE_DIR }}
+          key: poetry-${{ matrix.os }}-${{ matrix.python-version }}-${{ matrix.openmp-on }}-${{ hashFiles('**/pyproject.toml') }}
+
+      - name: Install dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: |
+          poetry install --no-interaction --no-root
+
+      - name: Build and install package
+        run: |
+          poetry run pip install .
+          rm -r ./probreg
+
+      - name: Test
+        run: poetry run python -m unittest discover
