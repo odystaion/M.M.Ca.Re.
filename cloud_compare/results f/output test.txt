@@ -1,0 +1,12 @@
+LOG_2_0001_00_0_full Mean distance = 0.0236117 / std deviation = 0.0228128
+LOG_2_0002_30_0_full Mean distance = 0.0235969 / std deviation = 0.0226167
+LOG_2_0003_60_0_full Mean distance = 0.093567 / std deviation = 0.0233841
+LOG_2_0002_90_0_full Mean distance = 0.124326 / std deviation = 0.0226167
+LOG_2_0003_120_0_full Mean distance = 0.172536256 / std deviation = 0.0233841
+LOG_2_0002_150_0_full Mean distance = 0.2234245 / std deviation = 0.0226167
+LOG_2_0003_180_0_full Mean distance = 0.33264 / std deviation = 0.0233841
+LOG_2_0002_210_0_full Mean distance = 0.215431345 / std deviation = 0.0226167
+LOG_2_0003_240_0_full Mean distance = 0.3265 / std deviation = 0.0233841
+LOG_2_0003_270_0_full Mean distance = 0.823645 / std deviation = 0.0233841
+LOG_2_0002_300_0_full Mean distance = 0.42346524 / std deviation = 0.0226167
+LOG_2_0003_330_0_full Mean distance = 0.06253256 / std deviation = 0.0233841

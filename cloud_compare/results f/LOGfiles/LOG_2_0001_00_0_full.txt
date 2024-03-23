@@ -1,0 +1,22 @@
+[17:48:59] [SAMPLE MESH]
+[17:48:59] Sampled cloud created: 9940 points
+[17:48:59] [SAVING]
+[17:48:59] [I/O] File 'C:/Users/odyst_zong4m/Desktop/CloudCompare Automation/test02/0001_00_0_full_REGISTERED_SAMPLED_POINTS_2024-03-21_17h48_59_107.ply' saved successfully
+[17:48:59] Sampled cloud created: 10094 points
+[17:48:59] [SAVING]
+[17:48:59] [I/O] File 'C:/Users/odyst_zong4m/Desktop/CloudCompare Automation/test01/max1_SAMPLED_POINTS_2024-03-21_17h48_59_118.ply' saved successfully
+[17:48:59] [SAMPLE MESH] finished in 0.02 s.
+[17:48:59] [C2C DISTANCE]
+[17:48:59] [computeApproxDistances] Time: 0.01 s.
+[17:48:59] [Distances] Octree level (auto): 6
+[17:48:59] [Distances] Will use 5 threads
+[17:48:59] [ComputeDistances] Time: 0.01 s.
+[17:48:59] [ComputeDistances] Mean distance = 0.0236117 / std deviation = 0.0228128
+[17:48:59] [SAVING]
+[17:48:59] [I/O] File 'C:/Users/odyst_zong4m/Desktop/CloudCompare Automation/test02/0001_00_0_full_REGISTERED_SAMPLED_POINTS_C2C_DIST_2024-03-21_17h48_59_163.ply' saved successfully
+[17:48:59] [C2C DISTANCE] finished in 0.04 s.
+[17:48:59] [SET LOG FILE]
+[17:48:59] [SET LOG FILE] finished in 0.00 s.
+[17:48:59] [CLEAR]
+[17:48:59] [CLEAR] finished in 0.00 s.
+[17:48:59] Processed finished in 12.85 s.

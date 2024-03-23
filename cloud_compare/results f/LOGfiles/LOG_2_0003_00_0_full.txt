@@ -1,0 +1,28 @@
+[17:49:27] Entity '0003_00_0_full' has been registered
+[17:49:27] RMS: 0.0340537
+[17:49:27] Number of points used for final step: 20000
+[17:49:27] [SAVING]
+[17:49:27] [I/O] File 'C:/Users/odyst_zong4m/Desktop/CloudCompare Automation/test02/0003_00_0_full_REGISTERED_2024-03-21_17h49_27_126.ply' saved successfully
+[17:49:27] [ICP] finished in 13.27 s.
+[17:49:27] [SAMPLE MESH]
+[17:49:27] Sampled cloud created: 9966 points
+[17:49:27] [SAVING]
+[17:49:27] [I/O] File 'C:/Users/odyst_zong4m/Desktop/CloudCompare Automation/test02/0003_00_0_full_REGISTERED_SAMPLED_POINTS_2024-03-21_17h49_27_157.ply' saved successfully
+[17:49:27] Sampled cloud created: 10159 points
+[17:49:27] [SAVING]
+[17:49:27] [I/O] File 'C:/Users/odyst_zong4m/Desktop/CloudCompare Automation/test01/max3_SAMPLED_POINTS_2024-03-21_17h49_27_169.ply' saved successfully
+[17:49:27] [SAMPLE MESH] finished in 0.02 s.
+[17:49:27] [C2C DISTANCE]
+[17:49:27] [computeApproxDistances] Time: 0.01 s.
+[17:49:27] [Distances] Octree level (auto): 6
+[17:49:27] [Distances] Will use 5 threads
+[17:49:27] [ComputeDistances] Time: 0.01 s.
+[17:49:27] [ComputeDistances] Mean distance = 0.0240951 / std deviation = 0.0233841
+[17:49:27] [SAVING]
+[17:49:27] [I/O] File 'C:/Users/odyst_zong4m/Desktop/CloudCompare Automation/test02/0003_00_0_full_REGISTERED_SAMPLED_POINTS_C2C_DIST_2024-03-21_17h49_27_213.ply' saved successfully
+[17:49:27] [C2C DISTANCE] finished in 0.04 s.
+[17:49:27] [SET LOG FILE]
+[17:49:27] [SET LOG FILE] finished in 0.00 s.
+[17:49:27] [CLEAR]
+[17:49:27] [CLEAR] finished in 0.00 s.
+[17:49:27] Processed finished in 13.52 s.

@@ -1,0 +1,9 @@
+[17:48:46] [SET LOG FILE] finished in 0.00 s.
+[17:48:46] [ICP]
+[17:48:46] [ICP] Will use 0 threads
+[17:48:59] Entity '0001_00_0_full' has been registered
+[17:48:59] RMS: 0.0338949
+[17:48:59] Number of points used for final step: 20000
+[17:48:59] [SAVING]
+[17:48:59] [I/O] File 'C:/Users/odyst_zong4m/Desktop/CloudCompare Automation/test02/0001_00_0_full_REGISTERED_2024-03-21_17h48_59_091.ply' saved successfully
+[17:48:59] [ICP] finished in 12.60 s.
