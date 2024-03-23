@@ -1,0 +1,14 @@
+Step 1: Choose Comparison Method: FRDS vs FSDR
+Step 2: Choose Local Model: LS vs TRI vs HF
+Step 3: By running the master script 3 scripts are executed
+	-1. cc_multi_f.py: this script performs the CloudCompare actions of:
+		a. Inputing the necessary objs
+		b. Aligning them with ICP
+		c. Subsampling their point-clouds
+		d. calculating their distance based on the local model of STEP2
+	-2. sorter_f.py: this script organises the outputs of the first script into folders
+		a. LOGfiles: a history of actions performed in CloudCompare
+		b. point clouds f: the color graded point clouds of the source
+		c. other meshes: other objs or plys created during the process
+	-3. plotter_auto.py: creates a point plot of the distances based on the comparison method of STEP1
+		it also fits a polynomial equation to the points generated
