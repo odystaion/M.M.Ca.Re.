@@ -1,6 +1,6 @@
 matplotlib
 scikit-image
-trimesh
+trimesh==4.3
 rtree
 pytorch_lightning
 kornia>0.4.0
