@@ -10,9 +10,10 @@ channels:
 dependencies:
   - python=3.8
   - pytorch-cuda=11.6
-  - pytorch=1.13.0
+  - pytorch=1.13.1
   - nvidiacub
-  - torchvision
+  - torchvision=0.14.1
+  - pytorch-lightning=1.9.0
   - fvcore
   - iopath
   - pyembree
