@@ -170,3 +170,4 @@ yacs==0.1.8
 yarl==1.15.2
 zipp==3.20.2
 zstandard==0.23.0
+git+https://github.com/YuliangXiu/rembg.git
